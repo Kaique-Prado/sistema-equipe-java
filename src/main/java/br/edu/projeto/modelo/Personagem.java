@@ -1,11 +1,11 @@
 
 public class Personagem {
     private String nome, sexo, raca, classe, arma, armadura;
-    private int nivel, vida, mana, forca, agilidade, inteligencia, ataque, numeroDeHabilidades, defesa;
+    private int nivel, vida, forca, agilidade, inteligencia, ataque, defesa;
 
     //CONSTRUTOR
 
-    public Personagem(String nome, String sexo, String raca, String classe, String arma, String armadura, int nivel, int vida, int mana, int forca, int agilidade, int inteligencia, int ataque, int defesa) {
+    public Personagem(String nome, String sexo, String raca, String classe, String arma, String armadura, int nivel, int vida, int forca, int agilidade, int inteligencia, int ataque, int defesa) {
         this.nome = nome;
         this.sexo = sexo;
         this.raca = raca;
@@ -14,14 +14,11 @@ public class Personagem {
         this.armadura = armadura;
         this.nivel = nivel;
         this.vida = vida;
-        this.mana = mana;
         this.forca = forca;
         this.agilidade = agilidade;
         this.inteligencia = inteligencia;
-        this.ataque = ataque;
-        this.numeroDeHabilidades = 3;
+        this.ataque = ataque;        
         this.defesa = defesa;
-        this.numArmadura = numArmadura;
     }
 
     //GETTERS
@@ -58,10 +55,6 @@ public class Personagem {
         return vida;
     }
 
-    public int getMana() {
-        return mana;
-    }
-
     public int getForca() {
         return forca;
     }
@@ -76,10 +69,6 @@ public class Personagem {
 
     public int getAtaque() {
         return ataque;
-    }
-
-    public int getNumeroDeHabilidades() {
-        return numeroDeHabilidades;
     }
 
     public int getDefesa() {
@@ -120,10 +109,6 @@ public class Personagem {
         this.vida = vida;
     }
 
-    public void setMana(int mana) {
-        this.mana = mana;
-    }
-
     public void setForca(int forca) {
         this.forca = forca;
     }
@@ -138,10 +123,6 @@ public class Personagem {
 
     public void setAtaque(int ataque) {
         this.ataque = ataque;
-    }
-
-    public void setNumeroDeHabilidades(int numeroDeHabilidades) {
-        this.numeroDeHabilidades = numeroDeHabilidades;
     }
 
     public void setDefesa(int defesa) {
@@ -159,12 +140,10 @@ public class Personagem {
                 ", armadura='" + armadura + '\'' + "\n" +
                 ", nivel=" + nivel + "\n" +
                 ", vida=" + vida + "\n" +
-                ", mana=" + mana + "\n" +
                 ", forca=" + forca + "\n" +
                 ", agilidade=" + agilidade + "\n" +
                 ", inteligencia=" + inteligencia + "\n" +
                 ", ataque=" + ataque + "\n" +
-                ", numeroDeHabilidades=" + numeroDeHabilidades + "\n" +
                 ", defesa=" + defesa +
                 '}'; 
     }
