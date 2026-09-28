@@ -20,4 +20,5 @@ public class Paladino extends Personagem {
     @Override
     public String toString(){
         return super.toString() + "\nHonra=" + honra
+        
     }
