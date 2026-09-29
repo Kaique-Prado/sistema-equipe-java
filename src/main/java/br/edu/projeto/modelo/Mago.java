@@ -7,16 +7,16 @@ public class Mago extends Personagem{
         this.mana = mana;
     }
 
-    public String getMana(){
+    public int getMana(){
         return mana;
     }
 
-    public void setMana(String tipoMagia){
+    public void setMana(int mana){
         this.mana = mana;
     }
 
     @Override
-    public void toString(){
+    public String toString(){
         return super.toString() + "\nMana =" + mana;
     }
 }
